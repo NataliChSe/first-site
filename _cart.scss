@@ -1,0 +1,189 @@
+
+// ШАПКА
+
+.top-background-cart{
+    height: 400px;
+    background-image: url(img/top-background-cart.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// КОРЗИНА
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+    &_content {
+        grid-column: span 8;
+    }
+    &_name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        box-sizing: border-box;
+        padding-right: 27px;
+    }
+    &_item {
+        padding-top: 25px;
+        padding-bottom: 32px;
+        border-top: 0.5px solid #CACDD8;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
+    &_left {
+        display: flex;
+        gap: 32px;
+    }
+    &_info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        &_price-3 {
+            color: #050505;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+    &_link-box {
+        display: flex;
+        gap: 30px;
+    }
+    &_link {
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration-line: underline;
+        transition: all, 1s;
+    }
+    &_link:hover {
+        color: #888;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    &_input {
+        width: 71px;
+        height: 51px;
+        outline: none;
+        border-radius: 6px;
+        background: #F7F6F6;
+        border: 0.5px solid #F7F6F6;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    &_button-box {
+        display: flex;
+        column-gap: 7px;
+        padding-top: 18px;
+        box-sizing: border-box;
+    }
+    &_button-item {
+        width: 200px;
+        height: 37px;
+        border-radius: 50px;
+        border: 1px solid #000;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        transition: all, 1s;
+    }
+    &_button-item:hover {
+        background:#000;
+        color: $color-text;
+        cursor: pointer;
+    }
+    &_form {
+        border-radius: 20px;
+        background: #F7F6F6;
+        height: 556px;
+        grid-column: span 4;
+        &_filling {
+            display: flex;
+            flex-direction: column;
+            &-box {
+                padding-left: 27px;
+                padding-right: 64px;
+                padding-top: 35px;
+                display: grid;
+                gap: 44px;
+            }
+        }
+        &_head-3 {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 42px;
+            box-sizing: border-box;
+        }
+        &_input {
+            font-family: inherit;
+            border:none;
+            outline: none;
+            background-color: transparent;
+            border-bottom: 1px solid #CACDD8;
+            width: 288px;
+        }
+        &_input::placeholder {
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        &_total {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            padding-top: 64px;
+            display: flex;
+            justify-content: center;
+        }
+        &_total-price {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            padding-left: 5px;
+            box-sizing: border-box;
+        }
+        &_button {
+            width: 290px;
+            height: 41px;
+            border-radius: 20px;
+            border: 1px solid #040404;
+            background-color: transparent;
+            color: #000;
+            font-family: inherit;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            margin-top: 18px;
+            box-sizing: border-box;
+            animation: myAnim 2s linear 5s 2 normal forwards;
+            transition: all, 1s;
+        }
+        &_button:hover {
+            background:#000;
+            color: $color-text;
+            cursor: pointer;
+        }
+    }
+}

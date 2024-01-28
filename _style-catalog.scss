@@ -1,0 +1,68 @@
+/* ШАПКА */
+
+.top-background-catalog {
+    height: 400px;
+    background-image: url(img/top-background-catalog.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.top-head-catalog {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFF;
+    margin-top: 127px;
+    box-sizing: border-box;
+}
+
+
+// СОРТИРОВКА+ХЛЕБНЫЕ КРОШКИ
+.navigation-home-sorting {
+    padding-top: 64px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navigation-home {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.sorting {
+    font-family: inherit;
+    width: 288px;
+    height: 41px;
+    border-radius: 20px;
+    border: 1px solid #C4C4C4;
+    outline: none;
+    padding-left: 14px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    appearance: none;
+}
+
+.sorting-content {
+    position: relative;
+    width: 288px;
+}
+
+.sorting-content::after {
+    content: url(img/strelka.svg);
+    position: absolute;
+    top: 10px;
+    right: 22px;
+    pointer-events: none;
+}
